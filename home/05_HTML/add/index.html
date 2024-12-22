@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 align="center"><b>Заполните анкету</b></h1>
+    <FIELDSET>
+        <form action="http://fe.it-academy.by/TestForm.php">
+            <fieldset>
+                <LEGEND align="left">Личные данные</LEGEND>
+                <label>
+                    <div><input type="text" pattern="[а-яА-ЯЁё-]" maxlength="25" placeholder="Фамилия" required>text:
+                        Только
+                        кириллица, без пробелов, длина поля 25,
+                        обязательное поле, автофокус на данном поле)</div>
+                    <div><input type="text" pattern="[а-яА-ЯЁё-]" maxlength="20" placeholder="Имя" required>text: Только
+                        кириллица, без пробелов, длина поля 20, обязательное
+                        поле)</div>
+                    <div><input type="text" pattern="[а-яА-ЯЁё-]" placeholder="Отчество" maxlength="25" required>text:
+                        Только
+                        кириллица, без пробелов, длина поля 24,
+                        обязательное поле)</div>
+                </label>
+                <FIELDSET>
+                    <LEGEND align="left">Паспортные данные</LEGEND>
+                    <label>
+                        <div>text: Серия только заглавные две латинские буквы с длиной 2 и максимальным количеством
+                            символов
+                            2,
+                            количество букв не менее 2, обязательнос поле</div>
+                        <div>text: Номер паспорта только цифры с длиной 7 и максимальным количеством символов 7,
+                            количество
+                            цифр
+                            не
+                            менее 7, обязательное поле</div>
+                        <input type="text" pattern="[A-Z]" maxlength="2" placeholder="AA" required>
+                        <input type="text" pattern="[0-9]{7}" maxlength="7" placeholder="1234567" required>
+                    </label>
+                </FIELDSET>
+                <FIELDSET>
+                    <LEGEND align="left">Дата рождения</LEGEND>
+                    <label>
+                        <div><input type="text" pattern="[0-9]{4}" maxlength="4" placeholder="2000" required>text: Год
+                            рождения
+                            4-е
+                            цифры</div>
+                        <select name="list" id="list">
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель </option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябрь</option>
+                            <option value="8">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="12">Декабрь</option>
+                        </select>select: Месяц рождения
+                        <div><input type="text" pattern="[0-9]{1,31}" maxlength="31" required>РБ (Национальность выбор
+                            одного
+                            значения из списка, обязательное поле)</div>
+                    </label>
+                </FIELDSET>
+                <select name="list" id="list">
+                    <option value="1">РБ</option>
+                    <option value="2">Россия</option>
+                    <option value="3">Польша</option>
+                    <option value="4">Германия </option>
+                    <option value="5">Британия</option>
+                </select>(Национальность-выбор одного значения из списка, обязательное поле)
+                <div>Адрес:</div>
+                <div><textarea name="comment"></textarea></div>
+            </fieldset>
+            <fieldset>
+                <LEGEND align="left">Интересы</LEGEND>
+                <FIELDSET>
+                    <LEGEND align="left">аггау: Хобби</LEGEND>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> Рыбалка
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> Астрономия
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> Дайвинг
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> Марки
+                    </label><br>
+                </FIELDSET>
+                <FIELDSET>
+                    <LEGEND align="left">Домашние животные (возможность выбора нескольких вариантов):</LEGEND>
+                    <div>array: select multiple</div>
+                    <select name="list" id="list">
+                        <optgroup label="Попугаи">
+                            <option value="1">Волнистый</option>
+                            <option value="2">Apa</option>
+                            <option value="3">Неразлучник</option>
+                        </optgroup>
+                        <optgroup label="Рыба">
+                            <option value="4">Караси</option>
+                            <option value="5">Окуни</option>
+                            <option value="6">Осетр</option>
+                        </optgroup>
+                        <optgroup label="Птицы">
+                            <option value="4">Стая ворон</option>
+                            <option value="5">Аист</option>
+                            <option value="6">Археоптерикс</option>
+                        </optgroup>
+                    </select>
+                </FIELDSET>
+            </fieldset>
+            <fieldset>
+                <LEGEND align="left">Данные для входа и восстановления пароля</LEGEND>
+                <div><input type="text" pattern="[A-Z]{5,20}" maxlength="20" placeholder="Логин" required>text: Только
+                    латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле)</div>
+                <div><input type="text" pattern="[A-Z]{10,20}" maxlength="20" placeholder="Логин" autocomplete="off"
+                        required>password: Только
+                    латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить
+                    автозаполнение
+                </div>
+            </fieldset>
+            <fieldset>
+                <LEGEND align="left">Координаты:</LEGEND>
+                <div><input type="email" name="email" placeholder="введите адрес почты">email: проверка должна
+                    осуществляться при помощи новых атрибутов тега &#60;input&#62;)</div>
+                <div><input type="url" name="url" placeholder="введите адрес сайта">url: проверка должна осуществляться
+                    при
+                    помощи новых атрибутов тега &#60;input&#62;)</div>
+            </fieldset>
+            <fieldset>
+                <LEGEND align="left">Цифры</LEGEND>
+                <div><input type="text" pattern="\d+(\.\d{2})?" pattern="{-2.5,2.5}">number: Диапазон от 2.5 до 2.5 с
+                    шагом
+                    0.1</div>
+                <div><input type="range" min="1" max="10">
+                    <br>range: Максимальное 10 минимальное 1
+                </div>
+            </fieldset>
+            <fieldset>
+                <LEGEND align="left">Кнопки управления</LEGEND>
+                <form action="http://fe.it-academy.by/TestForm.php">
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Сбросить">
+                    <div><button type='submit'><img src="../add/Без названия.png"></button><sup>-при нажатии на эту
+                            кнопку
+                            ничего не
+                            происходит</sup></div>
+                
+            </fieldset>
+        </form>
+    </FIELDSET>
+</body>
+
+</html>
