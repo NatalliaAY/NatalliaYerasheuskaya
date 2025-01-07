@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .li {
+            font-weight: bold;
+        }
+
+        .lli {
+            width: 15em;
+            background-color: rgb(155, 153, 153);
+            float: left;
+        }
+
+        .ctat {
+            white-space: pre-line;
+            background-color: rgb(118, 118, 118);
+        }
+
+        .fon {
+            float: left;
+            width: 240px;
+            height: 300px;
+            background-color: rgb(226 226 226);
+        }
+
+        .wrap {
+            height: 10px;
+            margin-bottom: 2em;
+        }
+
+        .photo {
+            background-image: url(../../05_HTML/add/Без\ названия.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 48px;
+        }
+        .ad {
+            background-color:rgb(118, 118, 118);
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lli">
+        <div class="li">Блок навигации</div>
+        <ul>
+            <li>Ширина 15еm</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным, чтобы по
+                высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+        </ul>
+        <div class="fon"></div>
+    </div>
+    <div class="ctat">
+        <div class="li">Статья 1</div>
+        <div>Размер блока:
+            Занимает всю доступную ширину
+            Должен присутствовать цвет фона
+            Во всех "статьях" сделайте отступ снизу от соседей равным 2еm, при помощи свойства margin-bottom
+        </div>
+    </div>
+    <div class="wrap"></div>
+    <div class="ctat">
+        <div class="li">Статья 2</div>
+        <div>Размер блока:
+            Занимает всю доступную ширину
+            Должен присутствовать цвет фона
+            Во всех "статьях" сделайте отступ снизу от соседей равным 2еm, при помощи свойства margin-bottom. Картинка
+            вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+            <img class="photo" src="" alt="">
+        </div>
+    </div>
+    <div class="ad">
+        <div class="wrap1"></div>
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</div>
+
+</body>
+
+</html>
