@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 0px 15px;
+            text-indent: 20px;
+            padding: 5px;
+        }
+
+        .link span {
+            visibility: hidden;
+            position: absolute;
+            left: 160px;
+        }
+
+        .link:hover span {
+            visibility: visible;
+        }
+
+        div.block:not(:last-child) {
+            border-style: none;
+            text-indent: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Форматы файлов.</h1>
+    <div>.DOC или .doc (от англ. <img src="1.png" alt="img"><a href="">document</a>) - расширение имени файла,
+        исползуемое для файлов, представляющих текст, с разметкой или без. Расширение DOC часто использовалось для
+        обозначения простых текстовых файлов без формирования, однако
+        позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="">Документ MS Word</a> <img src="2.jpg" alt="img">
+    </div>
+    <div>
+        Portable Document Format (<img src="1.png" alt="img"><a href="">PDF</a>) - межплатформенный формат электронных
+        документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.<br>
+        <a href="">Документ PDF</a><img src="4.png" alt="img">
+    </div>
+
+    <div>
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение
+        <img src="1.png" alt="img"><a href="">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов,
+        которое можно из него извлечь путем распаковки с помощью специальной программы. <br>
+        <a href="">Архив</a><img src="5.gif" alt="img">
+    </div>
+    <h1>Это список файлов</h1>
+    <div class="block">
+        <img src="3.jpg" alt="img"><a href="">Документ MS Word <span><img src="2.jpg" alt="img"></span></a><br>
+        <img src="3.jpg" alt="img"><a href="">Документ PDF <span><img src="4.png" alt="img"></span></a><br>
+        <img src="3.jpg" alt="img"><a href="">Архив <span><img src="5.gif" alt="img"></span></a>
+    </div>
+</body>
+
+</html>
